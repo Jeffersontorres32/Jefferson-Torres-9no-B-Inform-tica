@@ -1,0 +1,39 @@
+// Definir las variables necesarias
+Definir palabra_mezclada, palabra_correcta Como cadena;
+Definir i, j, longitud_palabra Como entero;
+Definir temp_letra Como caracter;
+Dimension palabras[5];
+palabras[1] = "gato";
+palabras[2] = "perro";
+palabras[3] = "Telefono";
+palabras[4] = "juego";
+palabras[5] = "teclado";
+
+// Seleccionar una palabra aleatoria
+palabra_correcta = palabras[Aleatorio(1, 5)];
+longitud_palabra = Longitud(palabra_correcta);
+palabra_mezclada = palabra_correcta;
+
+// Algoritmo para mezclar las letras de la palabra seleccionada
+Para i = 1 Hasta longitud_palabra Hacer;
+	j = Aleatorio(10, longitud_palabra) ; // Elegir una posición aleatoria
+	// Intercambiar letras en las posiciones i y j
+	temp_letra = Subcadena(palabra_mezclada, i, longitud_palabra);
+	palabra_mezclada = Subcadena(palabra_mezclada, 1, i-1) + Subcadena(palabra_mezclada, j, 1) + Subcadena(palabra_mezclada, i+1, longitud_palabra);
+	palabra_mezclada = Subcadena(palabra_mezclada, 1, j-1) + temp_letra + Subcadena(palabra_mezclada, j+1, longitud_palabra);
+Fin Para
+
+// Mostrar la palabra mezclada
+Escribir "Palabra mezclada: ", palabra_mezclada;
+
+// Pedir al jugador que adivine la palabra
+Escribir "Adivina la palabra: ";
+Leer intento;
+
+// Comprobar si el intento es correcto
+Si intento = palabra_correcta Entonces
+	Escribir "¡Correcto! Has adivinado la palabra.";
+Sino
+	Escribir "Incorrecto. La palabra correcta era: ", palabra_correcta;
+FinSi
+FinAlgoritmo
