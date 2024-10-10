@@ -1,0 +1,70 @@
+Algoritmo SignoZodiacal
+
+Definir dia, mes Como Entero;
+Escribir "Ingrese el día de nacimiento: ";
+Leer dia;
+Escribir "Ingrese el mes de nacimiento: ";
+Leer mes;
+Segun mes Hacer
+	1: Si dia <= 19 Entonces
+			Escribir "Capricornio";
+		SiNo
+			Escribir "Acuario";
+		FinSi
+	2: Si dia <= 18 Entonces
+			Escribir "Acuario";
+		SiNo
+			Escribir "Piscis";
+		FinSi
+	3: Si dia <= 20 Entonces
+			Escribir "Piscis";
+		SiNo
+			Escribir "Aries";
+		FinSi
+	4: Si dia <= 19 Entonces
+			Escribir "Aries";
+		SiNo
+			Escribir "Tauro";
+		FinSi
+	5: Si dia <= 20 Entonces
+			Escribir "Tauro";
+		SiNo
+			Escribir "Géminis";
+		FinSi
+	6: Si dia <= 20 Entonces
+			Escribir "Géminis";
+		SiNo
+			Escribir "Cáncer";
+		FinSi
+	7: Si dia <= 22 Entonces
+			Escribir "Cáncer";
+		SiNo
+			Escribir "Leo";
+		FinSi
+	8: Si dia <= 22 Entonces
+			Escribir "Leo";
+		SiNo
+			Escribir "Virgo";
+		FinSi
+	9: Si dia <= 22 Entonces
+			Escribir "Virgo";
+		SiNo
+			Escribir "Libra";
+		FinSi
+	10: Si dia <= 22 Entonces
+			Escribir "Libra";
+		SiNo
+			Escribir "Escorpio";
+		FinSi
+	11: Si dia <= 21 Entonces
+			Escribir "Escorpio";
+		SiNo
+			Escribir "Sagitario";
+		FinSi
+	12: Si dia <= 21 Entonces
+			Escribir "Sagitario";
+		SiNo
+			Escribir "Capricornio";
+		FinSi
+FinSegun
+FinAlgoritmo
