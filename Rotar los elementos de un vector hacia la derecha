@@ -1,0 +1,24 @@
+Algoritmo RotarDerecha
+
+Definir vector Como Entero;
+Definir ultimo Como Entero;
+Dimension vector[10];
+
+Escribir "Ingrese los elementos del vector:";
+Para i = 1 Hasta 10 Hacer
+	Leer vector[i];
+FinPara;
+
+ultimo = vector[10];
+
+Para i = 10 Hasta 2 Con Paso -1 Hacer
+	vector[i] = vector[i - 1];
+FinPara;
+
+vector[1] = ultimo;
+
+Escribir "El vector rotado hacia la derecha es: ";
+Para i = 1 Hasta 10 Hacer
+	Escribir vector[i];
+FinPara;
+FinAlgoritmo
