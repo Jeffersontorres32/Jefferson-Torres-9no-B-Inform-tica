@@ -1,0 +1,20 @@
+Algoritmo SignoChino
+
+Definir año Como Entero;
+Escribir "Ingrese el año de nacimiento: ";
+Leer año;
+Segun (año % 12) Hacer
+	0: Escribir "Mono";
+	1: Escribir "Gallo";
+	2: Escribir "Perro";
+	3: Escribir "Cerdo";
+	4: Escribir "Rata";
+	5: Escribir "Buey";
+	6: Escribir "Tigre";
+	7: Escribir "Conejo";
+	8: Escribir "Dragón";
+	9: Escribir "Serpiente";
+	10: Escribir "Caballo";
+	11: Escribir "Cabra";
+FinSegun
+FinAlgoritmo
