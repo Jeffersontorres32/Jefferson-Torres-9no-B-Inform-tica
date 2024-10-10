@@ -1,0 +1,7 @@
+Definir N1, N2, S, R, M Como Real;
+Escribir "Digita un número";
+Leer N1;
+Escribir "Digita un número";
+Leer N2;
+S<-N1+N2;
+Escribir "La suma es: ", S;
