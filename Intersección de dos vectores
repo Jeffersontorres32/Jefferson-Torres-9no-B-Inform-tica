@@ -1,0 +1,31 @@
+Algoritmo InterseccionDeVectores
+
+Definir vector1, vector2, interseccion Como Entero;
+Dimension vector1[6], vector2[6], interseccion[6];
+Definir contador Como Entero;
+contador = 0;
+
+Escribir "Ingrese los números para el primer vector:";
+Para i = 1 Hasta 6 Hacer
+	Leer vector1[i];
+FinPara;
+
+Escribir "Ingrese los números para el segundo vector:";
+Para i = 1 Hasta 6 Hacer
+	Leer vector2[i];
+FinPara;
+
+Para i = 1 Hasta 6 Hacer
+	Para j = 1 Hasta 6 Hacer
+		Si vector1[i] = vector2[j] Entonces
+			interseccion[contador + 1] = vector1[i];
+			contador = contador + 1;
+		FinSi;
+	FinPara;
+FinPara;
+
+Escribir "La intersección de los dos vectores es: ";
+Para i = 1 Hasta contador Hacer
+	Escribir interseccion[i];
+FinPara;
+FinAlgoritmo
