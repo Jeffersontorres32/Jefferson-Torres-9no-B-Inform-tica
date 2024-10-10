@@ -1,0 +1,32 @@
+Algoritmo FechaValida
+
+Definir dia, mes, año Como Entero;
+Escribir "Ingrese el día: ";
+Leer dia;
+Escribir "Ingrese el mes: ";
+Leer mes;
+Escribir "Ingrese el año: ";
+Leer año;
+
+Si (mes >= 1 Y mes <= 12) Entonces
+	Si (dia >= 1 Y dia <= 31) Entonces
+		Si (mes = 2 Y dia <= 28) O (mes = 2 Y dia = 29 Y ((año % 4 = 0 Y año % 100 <> 0) O (año % 400 = 0))) Entonces
+			Escribir "Fecha válida";
+		SiNo
+			Si (mes = 4 O mes = 6 O mes = 9 O mes = 11) Y dia <= 30 Entonces
+				Escribir "Fecha válida";
+			SiNo
+				Si (mes <> 2) Entonces
+					Escribir "Fecha válida";
+				SiNo
+					Escribir "Fecha inválida";
+				FinSi
+			FinSi
+		FinSi
+	SiNo
+		Escribir "Fecha inválida";
+	FinSi
+SiNo
+	Escribir "Fecha inválida";
+FinSi
+FinAlgoritmo
