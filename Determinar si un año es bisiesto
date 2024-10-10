@@ -1,0 +1,9 @@
+Definir año Como Entero;
+Escribir "Ingrese un año: ";
+Leer año;
+Si (año % 4 = 0 Y año % 100 <> 0) O (año % 400 = 0) Entonces
+	Escribir "El año es bisiesto";
+SiNo
+	Escribir "El año no es bisiesto";
+FinSi
+FinAlgoritmo
