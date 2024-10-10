@@ -1,0 +1,15 @@
+Algoritmo AprobacionEstudiante
+
+Definir nota1, nota2, nota3 Como Real;
+Escribir "Ingrese la nota de la primera materia: ";
+Leer nota1;
+Escribir "Ingrese la nota de la segunda materia: ";
+Leer nota2;
+Escribir "Ingrese la nota de la tercera materia: ";
+Leer nota3;
+Si nota1 >= 60 Y nota2 >= 60 Y nota3 >= 60 Entonces
+	Escribir "El estudiante ha aprobado todas sus materias";
+SiNo
+	Escribir "El estudiante no ha aprobado todas sus materias";
+FinSi
+FinAlgoritmo
