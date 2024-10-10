@@ -1,0 +1,11 @@
+Algoritmo NumeroEnRango
+
+Definir num Como Real;
+Escribir "Ingrese un número: ";
+Leer num;
+Si num >= 10 Y num <= 20 Entonces
+	Escribir "El número está en el rango";
+SiNo
+	Escribir "El número no está en el rango";
+FinSi
+FinAlgoritmo
