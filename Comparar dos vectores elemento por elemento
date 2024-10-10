@@ -1,0 +1,29 @@
+Algoritmo CompararVectores
+
+Definir vector1, vector2 Como Entero;
+Dimension vector1[5], vector2[5];
+Definir sonIguales Como Logico;
+sonIguales = Verdadero;
+
+Escribir "Ingrese los elementos del primer vector:";
+Para i = 1 Hasta 5 Hacer
+	Leer vector1[i];
+FinPara;
+
+Escribir "Ingrese los elementos del segundo vector:";
+Para i = 1 Hasta 5 Hacer
+	Leer vector2[i];
+FinPara;
+
+Para i = 1 Hasta 5 Hacer
+	Si vector1[i] <> vector2[i] Entonces
+		sonIguales = Falso;
+	FinSi;
+FinPara;
+
+Si sonIguales Entonces
+	Escribir "Los vectores son iguales.";
+SiNo
+	Escribir "Los vectores son diferentes.";
+FinSi;
+FinAlgoritmo
