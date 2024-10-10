@@ -1,0 +1,21 @@
+Definir dado, opcion, lanzamientos Como Entero;
+Definir registro Como Cadena;
+
+lanzamientos <- 0;
+registro <- ""  ;
+
+Repetir
+	dado <- Aleatorio(1, 6);
+	
+	lanzamientos <- lanzamientos + 1;
+	Escribir "Lanzamiento ", lanzamientos, ": El dado mostró ", dado;
+	
+	registro <- registro + "Lanzamiento " + ConvertirATexto(lanzamientos) + ": " + ConvertirATexto(dado) + " " + SaltoLinea;
+	
+	Escribir "¿Desea lanzar el dado nuevamente? (1: Sí, 0: No)";
+	Leer opcion;
+	
+Hasta Que opcion = 0
+Escribir "Resumen de lanzamientos:";
+Escribir registro;
+FinAlgoritmo
