@@ -1,0 +1,31 @@
+Algoritmo DeterminarOrden
+
+Definir vector Como Entero;
+Definir ascendente, descendente Como Logico;
+Dimension vector[10];
+ascendente = Verdadero;
+descendente = Verdadero;
+
+Escribir "Ingrese los elementos del vector:";
+Para i = 1 Hasta 10 Hacer
+	Leer vector[i];
+FinPara;
+
+Para i = 1 Hasta 9 Hacer
+	Si vector[i] > vector[i + 1] Entonces
+		ascendente = Falso;
+	FinSi;
+	Si vector[i] < vector[i + 1] Entonces
+		descendente = Falso;
+	FinSi;
+FinPara;
+
+Si ascendente Entonces
+	Escribir "El vector está ordenado de forma ascendente.";
+Sino Si descendente Entonces
+		Escribir "El vector está ordenado de forma descendente.";
+	SiNo
+		Escribir "El vector no está ordenado.";
+	FinSi;
+FinSi
+FinAlgoritmo
