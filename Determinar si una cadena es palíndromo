@@ -1,0 +1,12 @@
+Algoritmo EsPalindromo
+
+Definir palabra, palabraInvertida Como Cadena;
+Escribir "Ingrese una palabra o frase: ";
+Leer palabra;
+palabraInvertida = Inv(palabra);
+Si palabra = palabraInvertida Entonces
+	Escribir "Es un palíndromo";
+SiNo
+	Escribir "No es un palíndromo";
+FinSi
+FinAlgoritmo
