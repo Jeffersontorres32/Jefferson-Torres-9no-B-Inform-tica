@@ -1,0 +1,13 @@
+Algoritmo MultiploONo
+
+Definir num1, num2 Como Entero;
+Escribir "Ingrese el primer número: ";
+Leer num1;
+Escribir "Ingrese el segundo número: ";
+Leer num2;
+Si num1 % num2 = 0 Entonces
+	Escribir "El primer número es múltiplo del segundo";
+SiNo
+	Escribir "El primer número no es múltiplo del segundo";
+FinSi
+FinAlgoritmo
