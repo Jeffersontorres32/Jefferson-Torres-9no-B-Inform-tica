@@ -1,0 +1,83 @@
+Definir fila, col, i, j, k, l Como Entero;
+	Definir generaciones Como Entero;
+	Definir filaMax, colMax Como Entero;
+	Definir celulaActual, vecinosVivos Como Entero;
+	Definir grilla, grillaNueva Como Entero;
+	
+	filaMax <- 5;
+	colMax <- 5;
+	
+	Dimension grilla[filaMax, colMax];
+	Dimension grillaNueva[filaMax, colMax]
+	
+	
+	// Inicializar la grilla con celdas muertas (0) y vivas (1)
+	Para i <- 1 Hasta filaMax Hacer
+		
+		Para j <- 1 Hasta colMax Hacer
+			
+			Escribir "Ingrese el estado de la celda (0 para muerta, 1 para viva) en la posición [", i, ",", j, "]: ";
+			Leer grilla[i, j];
+		FinPara
+	FinPara
+	
+	Escribir "Ingrese el número de generaciones a simular: ";
+	Leer generaciones;
+	
+	Para k <- 1 Hasta generaciones Hacer
+		
+		// Mostrar el estado actual de la grilla
+		Escribir "Generación ", k;
+		Para i <- 1 Hasta filaMax Hacer
+			
+			Para j <- 1 Hasta colMax Hacer
+				
+				Escribir Sin Saltar grilla[i, j], " ";
+			FinPara
+			Escribir "";
+		FinPara
+		
+		// Calcular la siguiente generación
+		Para i <- 1 Hasta filaMax Hacer
+			
+			Para j <- 1 Hasta colMax Hacer
+				
+				vecinosVivos <- 0;
+				// Contar los vecinos vivos
+				Para l <- i-1 Hasta i+1 Hacer
+					
+					Para m <- j-1 Hasta j+1 Hacer
+						
+						Si l >= 1 Y l <= filaMax Y m >= 1 Y m <= colMax Y (l <> i O m <> j) Entonces
+							vecinosVivos <- vecinosVivos + grilla[l, m];
+						FinSi
+					FinPara
+				FinPara
+				
+				// Aplicar las reglas del Juego de la Vida
+				Si grilla[i, j] = 1 Entonces
+					Si vecinosVivos < 2 O vecinosVivos > 3 Entonces
+						grillaNueva[i, j] <- 0; // Muere por soledad o sobrepoblación
+					Sino
+						grillaNueva[i, j] <- 1; // Sobrevive
+					FinSi
+				Sino
+					Si vecinosVivos = 3 Entonces
+						grillaNueva[i, j] <- 1; // Nace por reproducción
+					Sino
+						grillaNueva[i, j] <- 0; // Permanece muerta;
+					FinSi
+				FinSi
+			FinPara
+		FinPara
+		
+		// Actualizar la grilla con la nueva generación
+		Para i <- 1 Hasta filaMax Hacer
+			
+			Para j <- 1 Hasta colMax Hacer
+				;
+				grilla[i, j] <- grillaNueva[i, j];
+			FinPara
+		FinPara
+	FinPara
+FinAlgoritmo
