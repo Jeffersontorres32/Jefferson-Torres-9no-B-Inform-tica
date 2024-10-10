@@ -1,0 +1,24 @@
+Algoritmo SumaDeVectores
+
+Definir vector1, vector2, suma Como Entero;
+Dimension vector1[5], vector2[5], suma[5];
+
+Escribir "Ingrese los números para el primer vector:";
+Para i = 1 Hasta 5 Hacer
+	Leer vector1[i];
+FinPara;
+
+Escribir "Ingrese los números para el segundo vector:";
+Para i = 1 Hasta 5 Hacer
+	Leer vector2[i];
+FinPara;
+
+Para i = 1 Hasta 5 Hacer
+	suma[i] = vector1[i] + vector2[i];
+FinPara;
+
+Escribir "La suma de los dos vectores es: ";
+Para i = 1 Hasta 5 Hacer
+	Escribir suma[i];
+FinPara;
+FinAlgoritmo
