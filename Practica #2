@@ -1,0 +1,14 @@
+Definir N1, N2, N3, S, R, M Como Real;
+Escribir "Digita un número";
+Leer N1;
+Escribir "Digita un número";
+Leer N2;
+Escribir "Digita un número";
+Leer N3;
+S<-N1+N2;
+R<-N1-N2-N3;
+M<-N1*N2*N3;
+Escribir "La suma es: ", S;
+Escribir "La resta es: ", R;
+Escribir "La multiplicación es: ", M;
+FinAlgoritmo
