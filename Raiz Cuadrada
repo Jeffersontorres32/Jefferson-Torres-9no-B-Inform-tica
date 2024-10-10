@@ -1,0 +1,12 @@
+Algoritmo RaizCuadrada
+
+Definir num, rz Como Real;
+Escribir "Ingrese un número: ";
+Leer num;
+Si num >= 0 Entonces
+	rz = rz(num);
+	Escribir "La raíz cuadrada es: ", r;
+SiNo
+	Escribir "No se puede calcular la raíz de un número negativo";
+FinSi
+FinAlgoritmo
